@@ -1,0 +1,48 @@
+.margin{width: 1220px;margin: 0 auto;}
+
+
+#top{height: 150px;overflow: hidden;}
+#top .logo{margin: 16px 0 0 12px;float: left;}
+
+#top .car{float: left;width: 900px;}
+#top .car h3{font-size: 35px; line-height: 65px;text-align: center;color: #008800;font-family: "新宋体";}
+
+table{text-align:center;margin-top: 40px;border: 2px solid #00FA9A;border-style: dashed;}
+table img{width:80px;height:80px;}
+table th{height: 60px;color: #9AA4FF;font-size: 20px;}
+#shopp h2{height: 40px;font-size: 20px;line-height: 40px;}
+#shopp h2 a{color: #C17D11;font-weight: 700;margin-left: 20px;display: inline-block;}
+.pay{display:flex;justify-content:space-between;height:90px;background:#fff;width:700px;margin:0 auto;font:16px/90px "";color:#666;padding:0 50px;}
+.pay a{display:block;}
+/* .pay .total{width: 40px;} */
+.pay .total-pay{color:#e01841;}
+.pay .pay-l:hover{color:#e01841;}
+.pay .pay-r{width:160px;height:50px;background:#e01841;font:700 24px/50px "";color:#fff;margin-top:20px;border-radius:10px;text-align:center;box-shadow: 0 0 5px #ddd;text-shadow: 0 0 5px #ddd;}
+
+
+#footer{margin: 0 auto;margin-top: 30px;border-top: 1px solid #eeeeee;background: #FFF;font-family: Verdana, "新宋体";padding-bottom: 50px;}
+#footer .service{height: 98px;}
+#footer .service ul{width: 1200px;margin: 0 auto;overflow: hidden;padding-bottom: 30px;}
+#footer .service ul li{width: 300px;height: 70px;float: left;display: inline;margin-top: 30px;}
+#footer .service ul li .i1{width: 46px;height: 46px;background: url(../img/footer01.png);background-repeat: no-repeat;display: inline-block;float: left;margin-right: 5px;}
+#footer .service ul li .i2{width: 46px;height: 46px;background: url(../img/footer02.png);background-repeat: no-repeat;display: inline-block;float: left;margin-right: 5px;}
+#footer .service ul li .i3{width: 46px;height: 46px;background: url(../img/footer03.png);background-repeat: no-repeat;display: inline-block;float: left;margin-right: 5px;}
+#footer .service ul li .i4{width: 46px;height: 46px;background: url(../img/footer04.png);background-repeat: no-repeat;display: inline-block;float: left;margin-right: 5px;}
+#footer .service ul li p{width: 170px;height: 30px;display: inline-block;margin-left: 5px;text-wrap: normal;color: #444444;font-size: 18px;font-family: "黑体";}
+#footer .service ul li span{height: 14px;text-align: left;display: block;color: #999999;font-size: 14px;font-weight: normal;font-family: "黑体";}
+#footer .guide{width: 100%;border-bottom: 1px solid #eeeeee;}
+#footer .guide ul{width: 1200px;margin: 0 auto;overflow: hidden;padding-bottom: 30px; margin-top: 30px;}
+#footer .guide ul li{width: 200px;height: auto;float: left;padding-left: 0px;}
+#footer .guide ul li h3{width: auto;height: 22px;font-size: 16px;color: #199733;text-align: left;font-family: "黑体";}
+#footer .guide ul li a{display: block;width: auto;height: 24px;line-height: 24px;font-size: 12px;color: #666666;display: block;text-align: left;}
+
+
+#footer .link{padding: 20px;font-size: 12px;line-height: 26px;}
+#footer .link a{margin-right: 18px;display: inline;white-space: nowrap;}
+
+#footer .copyright{height: 67px;margin:10px auto;margin-top: 20px;text-align: center;}
+#footer .copyright span{height: 14px;display: block;margin-bottom: 10px;text-align: center;font-size: 12px;color: #666666;}
+
+#footer .bottom{height: 49px;margin-top: 20px;width: 1200px;}
+#footer .bottom ul{width: 576px;margin: 0 auto;}
+#footer .bottom ul li{float: left;}

@@ -1,0 +1,9 @@
+$(".banner1").banner({
+        items:$(".banner1").find("img"),       
+        left:$(".banner1").find("#left"),       
+        right:$(".banner1").find("#right"),     
+        autoPlay:true,                          
+        delayTime:2000,                        
+        moveTime:100,                          
+        index:0                             
+    })

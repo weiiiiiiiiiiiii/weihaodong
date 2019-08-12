@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Registered</title>
+		<link rel="stylesheet" type="text/css" href="css/registered.css"/>
+		<link rel="stylesheet" type="text/css" href="css/public.css"/>
+	</head>
+	<body>
+		<header>
+			<div class="margin">
+				<div class="logo">
+					<img src="img/logo.png" >
+				</div>
+				<div class="header-r">
+					<span>嘿&nbsp;&nbsp; , &nbsp;&nbsp;欢迎来到美鲜冻品商城</span>
+				</div>
+			</div>
+		</header>
+		<div id="banner">
+			<img src="img/register_banner.jpg" >
+		</div>
+		
+		
+		
+		<div id="cont">
+			<div class="margin">
+				<div class="zc-t">
+					<span>注册新用户</span>
+					<b>已经注册,   <a href="landing.html">现在登陆</a></b>
+				</div>
+				<div class="zc-b">
+								<p class="ts"></p>
+						<div class="zc-l">
+								<table>
+									<tr>
+										<td>用户名：</td>
+										<td>
+											<div class="box">
+												<input type="text" id="btn1" value="请输入用户名"/>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>密码：</td>
+										<td>
+											<div class="box">
+												<input type="text" id="btn2" value="请输入密码"/>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>重复密码：</td>
+										<td>
+											<div class="box">
+												<input type="text" id="btn3"/>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>安全级别：</td>
+										<td class="qd">
+											
+											<div class="left"></div>
+											<div class="center"></div>
+											<div class="right"></div>
+										</td>
+									</tr>
+								</table>
+								<table>
+									<tr>
+										<td>电子邮件：</td>
+										<td>
+											<div class="box">
+												
+												<input type="text" id="btn4"/>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>真实姓名：</td>
+										<td>
+											<div class="box">
+												
+												<input type="text" id="btn5"/>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>手机号：</td>
+										<td>
+											<div class="box">
+												<input type="text" id="btn6"/>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>验证码：</td>
+										<td class="yz">
+											<input type="text" id="yan"/>
+											<div class="ma"></div>
+										</td>
+									</tr>
+								</table>
+								<div class="read">
+									<input type="checkbox" name="" class="che" /> 
+									<u>我已阅读并同意&nbsp;&nbsp;&nbsp;&nbsp;<a href="##">用户协议</a></u>
+								</div>
+								<div class="dl">
+									
+									<button id="butn">注册</button>
+								</div>
+								<div>注册的状态：<span></span></div>
+							</div>
+								<div class="zc-r">
+									<img src="img/regist_index.jpg" >
+								</div>
+						</div>
+					</div>
+				</div>
+	</body>
+	<script src="js/registered.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jquery.1.12.4.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		class Login{
+			constructor(){
+					this.url = "http://api.icodeilife.cn:81/user";
+					
+					
+					// var oCont = document.getElementById("cont");
+					// var oBtn1 = document.getElementById("btn1");
+					// var oBtn2 = document.getElementById("btn2");
+					// var oBtn3 = document.getElementById("btn3");
+					// var oBtn4 = document.getElementById("btn4");
+					// var oBtn5 = document.getElementById("btn5");
+					// var oBtn6 = document.getElementById("btn6");
+					// var oYan = document.getElementById("yan");
+					// var oButn = document.getElementById("butn");
+					
+					this.oBtn1 = $("#btn1");
+		            this.oBtn2 = $("#btn2");
+		            this.oBtn3 = $("#btn3");
+		            this.oBtn4 = $("#btn4");
+					this.oBtn5 = $("#btn5");
+					this.oBtn6 = $("#btn6");
+		            this.btn = $("#butn");
+		            this.state = $("div span");
+		            
+		            this.addEvent()
+				}
+				addEvent(){
+					var that = this;
+					this.btn.click(function(){
+						that.load();
+					})
+				}
+				load(){
+					$.ajax({
+		            url:this.url,
+		            data:{
+		                type:"register",
+		                user:this.oBtn1.val(),
+		                pass:this.oBtn2.val()
+		                
+		            },
+		            success:(res)=>{
+		                res = JSON.parse(res);
+						console.log(res)
+		                if(res.code == 0){
+		                    
+		                    this.state.html("注册失败，请重新注册");
+		
+		                }else if(res.code == 1){
+		                    
+		                    this.state.html("注册成功，3秒后跳转到<a href='landing.html'>登录</a>");
+		                    setTimeout(() => {
+		                        location.href = "landing.html"
+		                    }, 3000);
+		                    
+		                }
+		            }
+		        })
+			}
+		}
+			new Login;
+	</script>
+</html>

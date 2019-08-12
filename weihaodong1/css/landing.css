@@ -1,0 +1,27 @@
+.margin{width: 1192px;margin: 0 auto;}
+
+
+header{height: 120px;}
+header .logo{float: left;margin: 20px 0 0 2px;}
+header .header-r{float: right;font-size: 14px;line-height: 120px;}
+
+#login{height: 600px;background: #fcf3ee;}
+#login .tu{float: left;margin-top: 98px;}
+#login .login-r{float: left;margin: 100px 0 0 3px;}
+#login .login-r h3{font-size: 30px;width: 398px;height: 56px;background: #fafafc;color: #646464;text-align: center;line-height: 56px;border-radius: 5px;}
+#login .login-r .in{width: 398px;height: 360px;background: #F5F5F5;overflow: hidden;}
+#login .login-r .txt{display: block;width: 300px;height: 34px;font-size: 14px;line-height: 34px;padding-left: 10px;margin: 30px 0 20px 10px;}
+#login .login-r .pass{display: block;width: 300px;height: 34px;font-size: 14px;line-height: 34px;padding-left: 10px;margin: 30px 0 20px 10px;}
+/* #login .login-r .verify{overflow: hidden;}
+#login .login-r .verify .txt1{float: left;width: 104px; height: 34px;font-size: 14px;line-height: 34px;padding-left: 10px;margin: 15px 0 20px 10px;}
+#login .login-r .verify span{float: left;display: block;width: 104px; height: 34px;font-size: 14px;line-height: 34px;padding-left: 10px;margin: 15px 0 20px 10px;border: 1px solid #999999;}
+#login .login-r .verify a{float: left;font-size: 14px;line-height: 34px;margin: 15px 0 20px 10px;color: #199733;} */
+#login .login-r .remember{margin: 20px 0 0 15px;overflow: hidden;}
+#login .login-r .remember .che{float: left;width: 18px;height: 18px;}
+#login .login-r .remember i{float: left;}
+#login .login-r .remember a{float: right;color: #008000;margin-right: 10px;}
+#login .login-r .dl{text-align: center;margin-top: 30px;}
+#login .login-r .dl .btn{width: 260px;height: 50px;border: none;border-radius: 5px;background: #1D9733;color: #fff;font-size: 16px;}
+#login .login-r .zc{margin: 30px 0 0 15px;}
+#login .login-r .zc a{color: #199733;}
+#login .login-r .in .te{margin: 30px 0 0 20px;}
